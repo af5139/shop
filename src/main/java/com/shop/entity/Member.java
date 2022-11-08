@@ -2,14 +2,11 @@ package com.shop.entity;
 
 import com.shop.constant.Role;
 import com.shop.dto.MemberFormDto;
-import com.shop.dto.MemberFormDto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-//import org.springframework.data.annotation.Id;
 import javax.persistence.Id;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import sun.security.util.Password;
 
 import javax.persistence.*;
 
