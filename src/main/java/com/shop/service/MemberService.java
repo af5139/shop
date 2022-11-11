@@ -33,6 +33,7 @@ public class MemberService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Member member = memberRepository.findByEmail(email);
+
         if(member == null){
             throw new UsernameNotFoundException(email);
         }
