@@ -19,7 +19,6 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;         //상품코드
 
-
     @Column(nullable = false,length = 50)
     private String itemNm;  //상품명
 

@@ -15,6 +15,6 @@ public class ShopApplication {
 
 	@GetMapping("test")
 	public String test(){
-		return "sobal";
+		return "test";
 	}
 }
