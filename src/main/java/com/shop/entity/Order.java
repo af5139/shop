@@ -17,7 +17,7 @@ import java.util.List;
 public class Order {
 
     @Id @GeneratedValue
-    @Column(name = "member_id")
+    @Column(name = "order_id")
     private Long id;
 
     @ManyToOne
@@ -28,7 +28,7 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus; //주문상태
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
 
     private LocalDateTime regTime;
