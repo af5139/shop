@@ -7,8 +7,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "item_img")
-@Getter @Setter
-public class ItemImg extends BaseEntity{
+@Getter
+@Setter
+public class ItemImg extends BaseEntity {
 
     @Id
     @Column(name = "item_img_id")
@@ -27,7 +28,7 @@ public class ItemImg extends BaseEntity{
     @JoinColumn(name = "item_id")
     private Item item;
 
-    public void updateItemImg(String oriImgName, String imgName, String imgUrl){
+    public void updateItemImg(String oriImgName, String imgName, String imgUrl) {
         this.oriImgName = oriImgName;
         this.imgName = imgName;
         this.imgUrl = imgUrl;

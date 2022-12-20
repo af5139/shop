@@ -8,21 +8,22 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+
 @Entity
-@Table(name="item")
+@Table(name = "item")
 @Getter
 @Setter
 @ToString
-public class Item extends BaseEntity{
+public class Item extends BaseEntity {
     @Id
     @Column(name = "item_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;         //상품코드
 
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false, length = 50)
     private String itemNm;  //상품명
 
-    @Column(nullable = false,name = "price")
+    @Column(nullable = false, name = "price")
     private int price;      //가격
 
     @Column(nullable = false)
