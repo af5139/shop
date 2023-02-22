@@ -5,7 +5,6 @@ import com.shop.entity.Item;
 import lombok.Getter;
 import lombok.Setter;
 import org.modelmapper.ModelMapper;
-import org.springframework.ui.ModelMap;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
