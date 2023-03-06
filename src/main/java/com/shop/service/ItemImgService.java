@@ -38,4 +38,10 @@ public class ItemImgService {
         itemImgRepository.save(itemImg);
 
     }
+
+    public void updateItemImg(Long itemImgId, MultipartFile itemImgFile)throws Exception{
+        if(!itemImgFile.isEmpty()){
+            ItemImg savedItemImg = itemImgRepository.findById()
+        }
+    }
 }
